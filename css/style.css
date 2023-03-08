@@ -1,0 +1,39 @@
+.CPM-container{
+    width: 600px;
+    margin: 80px auto;
+}
+
+.CPM-green{
+    color: #0bd40b;
+}
+
+.CPM-red{
+    color: red;
+}
+
+.CPM-prezzo{
+    width: 70px;
+    height: 25px;
+    margin: 30px auto;
+}
+
+.CPM-btncenter{
+    margin-left: 195px;
+    margin-top: 30px;
+}
+
+.CPM-header{
+ background-color:#23606e;
+}
+
+.CPM-body{
+ background-color:#008f8c;
+}
+
+.CPM-btn{
+ background-color:#facfce;
+}
+
+.CPM-text{
+    color: #facfce;
+}

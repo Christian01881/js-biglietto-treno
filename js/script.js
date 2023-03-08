@@ -17,6 +17,6 @@ if(etaPasseggero < 18){
     prezzoFinale = ((numeroKilometri * prezzoKilometro) - (prezzoFinale * 0.4)).toFixed(2);
 }
 
-document.getElementById("Biglietto").innerHTML = `<p>${prezzoFinale}</p>`;
+document.getElementById("Biglietto").innerHTML = `<span><strong>${prezzoFinale}</strong></span><span><strong>€</strong><span>`;
 
 
