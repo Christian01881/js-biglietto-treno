@@ -7,10 +7,6 @@
     color: #0bd40b;
 }
 
-.CPM-red{
-    color: red;
-}
-
 .CPM-prezzo{
     width: 70px;
     height: 25px;
@@ -22,18 +18,19 @@
     margin-top: 30px;
 }
 
-.CPM-header{
- background-color:#23606e;
+
+body{
+    background-image: url(../img/train2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.CPM-body{
- background-color:#008f8c;
+.card{
+    background-color: rgba(255, 255, 255, 0.8)!important;
 }
 
-.CPM-btn{
- background-color:#facfce;
-}
-
-.CPM-text{
-    color: #facfce;
+.CPM-bg-btn{
+    background-color: #0bd40b;
 }
