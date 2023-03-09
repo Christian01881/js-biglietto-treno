@@ -11,12 +11,17 @@ const etaPasseggero = prompt(`inserire età del passeggero: `);
 const prezzoKilometro = 0.21;
 let prezzoFinale = (numeroKilometri * prezzoKilometro).toFixed(2);
 
-if(etaPasseggero < 18){
-    prezzoFinale = ((numeroKilometri * prezzoKilometro) - (prezzoFinale * 0.2)).toFixed(2);
-} else if(etaPasseggero > 65){
-    prezzoFinale = ((numeroKilometri * prezzoKilometro) - (prezzoFinale * 0.4)).toFixed(2);
-}
 
-document.getElementById("Biglietto").innerHTML = `<span><strong>${prezzoFinale}</strong></span><span><strong>€</strong><span>`;
+if(!isNaN(numeroKilometri) && !isNaN(etaPasseggero)){
+
+    if(etaPasseggero < 18){
+        prezzoFinale = ((numeroKilometri * prezzoKilometro) - (prezzoFinale * 0.2)).toFixed(2);
+    } else if(etaPasseggero > 65){
+        prezzoFinale = ((numeroKilometri * prezzoKilometro) - (prezzoFinale * 0.4)).toFixed(2);
+    }
+}else{
+    alert(`inserire solo valori numerici.`)
+}
+    document.getElementById("Biglietto").innerHTML = `<span><strong>${prezzoFinale}</strong></span><span><strong>€</strong><span>`;
 
 
